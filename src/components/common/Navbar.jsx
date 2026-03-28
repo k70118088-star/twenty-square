@@ -56,7 +56,7 @@ const Navbar = () => {
               icon="cart"
             />
             <Button
-              className="flex items-center gap-2.5 py-3.5 px-6 bg-[#ED1C25] font-semibold text-base text-white rounded-[82px]"
+              className="flex items-center gap-2.5 py-3 px-6 bg-[#ED1C25] font-semibold text-base text-white rounded-[82px]"
               text="Sign Up/Log In"
             />
           </div>
