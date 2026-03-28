@@ -7,19 +7,15 @@ import Button from "./Button";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 1);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
   return (
     <div className="w-full mx-auto fixed top-0 z-20">
-      
       {/* Navbar */}
       <div
         className={`max-w-360 w-full mx-auto px-4 sm:px-6 pt-3 pb-3.25 flex items-center justify-between transition-all duration-300 ${
@@ -36,7 +32,6 @@ const Navbar = () => {
             className="w-[80px] sm:w-[90.47px] h-auto"
           />
         </a>
-
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center justify-between gap-29.75">
           <div className="flex items-center gap-10.25">
@@ -50,7 +45,6 @@ const Navbar = () => {
               </Link>
             ))}
           </div>
-
           <div className="flex items-center gap-2.5">
             <Button
               className="flex items-center gap-2.5 py-3.5 px-6 border border-[#EDEDED] font-semibold text-base text-black rounded-[82px]"
@@ -67,18 +61,15 @@ const Navbar = () => {
             />
           </div>
         </div>
-
         {/* Hamburger */}
         <button
           className="lg:hidden flex flex-col gap-1"
-          onClick={() => setMenuOpen(true)}
-        >
+          onClick={() => setMenuOpen(true)}>
           <span className="w-6 h-[2px] bg-black"></span>
           <span className="w-6 h-[2px] bg-black"></span>
           <span className="w-6 h-[2px] bg-black"></span>
         </button>
       </div>
-
       {/* Overlay */}
       <div
         className={`fixed inset-0 bg-black/30 z-20 transition-opacity duration-300 ${
@@ -86,7 +77,6 @@ const Navbar = () => {
         }`}
         onClick={() => setMenuOpen(false)}
       ></div>
-
       {/* Right Drawer */}
       <div
         className={`fixed top-0 right-0 h-full w-[280px] bg-white z-30 shadow-lg transform transition-transform duration-300 ease-in-out ${
@@ -94,7 +84,6 @@ const Navbar = () => {
         }`}
       >
         <div className="p-6 flex items-center flex-col gap-5">
-          
           {/* Close Button */}
           <button
             className="self-end text-2xl"
@@ -102,7 +91,6 @@ const Navbar = () => {
           >
             ✕
           </button>
-
           {/* Nav Links */}
           {navLInks.map((item, index) => (
             <Link
@@ -114,19 +102,16 @@ const Navbar = () => {
               {item.title}
             </Link>
           ))}
-
           {/* Buttons */}
           <Button
             className="flex items-center justify-center gap-2.5 py-3 px-6 border border-[#EDEDED] text-black rounded-[82px]"
             text="Download App"
             icon="download"
           />
-
           <Button
             className="flex items-center justify-center border border-[#EDEDED] p-3 rounded-[82px]"
             icon="cart"
           />
-
           <Button
             className="flex items-center justify-center gap-2.5 py-3 px-6 bg-[#ED1C25] text-white rounded-[82px]"
             text="Sign Up/Log In"
