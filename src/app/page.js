@@ -9,7 +9,7 @@ export default function Home() {
       <img
         src="/assets/bg-img.webp"
         alt="bg-img"
-        className="w-full  object-cover h-[1590px]"
+        className="w-full  hidden lg:block object-cover h-[1590px]"
       />
       {/* Hero Text */}
       <Hero />
