@@ -4,3 +4,50 @@
 * {
   font-family: "Inter Tight", sans-serif;
 }
+
+.swiper {
+  max-width: 707px;
+  max-height: 707px;
+}
+
+
+.swiper-pagination {
+  display: flex !important;
+  gap: 10px !important;
+  justify-content: center !important;
+  bottom: 10px !important;
+}
+
+.swiper-pagination-bullet {
+  max-width: 212px !important;
+  width: 100% !important;
+  height: 6px !important;
+  border-radius: 32px !important;
+  background: white !important;
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-pagination-bullet-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background: red !important;
+  border-radius: 10px;
+  animation: progress 3s linear forwards;
+}
+
+@keyframes progress {
+  from {
+    width: 0%;
+
+  }
+
+  to {
+    width: 100%;
+  }
+
+}

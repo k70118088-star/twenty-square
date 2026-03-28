@@ -16,3 +16,15 @@ export const navLInks = [
         url: "/contact-us"
     }
   ];
+
+  export const sliderDAta = [
+  {
+    src: "/assets/slider-img.jpg",
+  },
+  {
+    src: "/assets/slider-img.jpg",
+  },
+  {
+    src: "/assets/slider-img.jpg",
+  },
+];

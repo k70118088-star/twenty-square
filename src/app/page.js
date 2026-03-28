@@ -1,3 +1,4 @@
+
 import Hero from "@/components/Hero";
 
 export default function Home() {
@@ -8,9 +9,8 @@ export default function Home() {
       <img
         src="/assets/bg-img.webp"
         alt="bg-img"
-        className="w-full object-cover"
+        className="w-full  object-cover h-[1590px]"
       />
-
       {/* Hero Text */}
       <Hero />
     </div>

@@ -1,6 +1,8 @@
 import { Geist, Geist_Mono, Inter, Inter_Tight } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/common/Navbar";
+import Footer from "@/components/common/Footer";
+
 
 const interTight =Inter_Tight({
   variable: "--font-inter-tight",
@@ -23,7 +25,11 @@ export default function RootLayout({ children }) {
       lang="en"
       className={`${interTight.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col"><Navbar />{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Navbar />
+        {children}
+        <Footer />
+        </body>
     </html>
   );
 }
