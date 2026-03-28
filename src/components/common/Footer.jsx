@@ -18,16 +18,16 @@ const Footer = () => {
                         
                         <div className='w-33.75 flex flex-col'>
                             <h3 className='font-medium text-base leading-[150%] text-black'>About</h3>
-                            <a href="" className='pt-5 font-normal text-sm leading-[150%] text-[#4A4F4B]'>About Us</a>
-                            <a href="" className='pt-3 font-normal text-sm leading-[150%] text-[#4A4F4B]'>FAQ’s</a>
-                            <a href="" className='pt-3 font-normal text-sm leading-[150%] text-[#4A4F4B]'>Policies</a>
+                            <a href="" className='hover:text-black pt-5 font-normal text-sm leading-[150%] text-[#4A4F4B]'>About Us</a>
+                            <a href="" className='hover:text-black pt-3 font-normal text-sm leading-[150%] text-[#4A4F4B]'>FAQ’s</a>
+                            <a href="" className='hover:text-black pt-3 font-normal text-sm leading-[150%] text-[#4A4F4B]'>Policies</a>
                         </div>
 
                         <div className='w-33.75 flex flex-col'>
                             <h3 className='font-medium text-base leading-[150%] text-black'>Products</h3>
-                            <a href="" className='pt-5 font-normal text-sm leading-[150%] text-[#4A4F4B]'>Squares</a>
-                            <a href="" className='pt-3 font-normal text-sm leading-[150%] text-[#4A4F4B]'>Gift Cards</a>
-                            <a href="" className='pt-3 font-normal text-sm leading-[150%] text-[#4A4F4B]'>Offers</a>
+                            <a href="" className='hover:text-black pt-5 font-normal text-sm leading-[150%] text-[#4A4F4B]'>Squares</a>
+                            <a href="" className='hover:text-black pt-3 font-normal text-sm leading-[150%] text-[#4A4F4B]'>Gift Cards</a>
+                            <a href="" className='hover:text-black pt-3 font-normal text-sm leading-[150%] text-[#4A4F4B]'>Offers</a>
                         </div>
 
                     </div>
