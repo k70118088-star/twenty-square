@@ -3,7 +3,7 @@ import Icons from './Icons'
 
 const Button = ({text ,className ,icon }) => {
   return (
-    <div><button className={className}><Icons icon={icon}/> {text}</button></div>
+    <div><button className={`cursor-pointer ${className}`}><Icons icon={icon}/> {text}</button></div>
   )
 }
 
