@@ -26,12 +26,12 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className='w-full max-w-[320px] h-auto sm:h-38 mt-6 lg:mt-[14.45px] mx-auto lg:mx-0 -rotate-3 rounded-2xl flex flex-col bg-white shadow-[-33px_37px_43.8px_-17px_#0000001A] px-3 sm:px-6.25 py-4 sm:py-0'>
+                <div className='w-full max-w-80.75 sm:h-38 mt-6 lg:mt-[14.45px] mx-auto lg:mx-0 -rotate-3 rounded-2xl flex flex-col bg-white shadow-[-33px_37px_43.8px_-17px_#0000001A] px-3 sm:px-6.25 py-4 sm:py-0'>
                     <img src="/assets/message.png" alt="" className='w-10 sm:w-12.25 h-10 sm:h-12.5' />
                     <h4 className='font-semibold text-xl sm:text-2xl pt-[4.66px] leading-[100%] bg-gradient-to-r from-black to-[#494949] bg-clip-text text-transparent'>
                         Need some help?
                     </h4>
-                    <div className='flex flex-row mt-[10.96px] items-center gap-3 sm:gap-[7.72px]'>
+                    <div className='flex flex-row mt-[10.96px] items-center  gap-3 sm:gap-[7.72px]'>
                         <Button className={"py-2 px-[16.30px] rounded-[82px] bg-[#F2F2F2] border border-[#E3E3E3] text-semibold text-[#2B2B2B] text-sm leading-[100%]"} text={"Chat With Us"}/>
                         <Button className={"py-[8.5px] px-4 rounded-[82px] bg-[#F2F2F2] border border-[#E3E3E3] text-semibold text-[#2B2B2B] text-sm leading-[100%]"} text={"Contact Us"}/>
                     </div>
