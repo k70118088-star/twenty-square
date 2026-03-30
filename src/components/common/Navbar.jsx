@@ -23,9 +23,7 @@ const Navbar = () => {
         className={`max-w-360 w-full mx-auto px-4 sm:px-6 pt-3 pb-3.25 flex items-center justify-between transition-all duration-300 ${
           scrolled
             ? "bg-white shadow-md"
-            : "bg-[linear-gradient(180deg,#FFFFFF_0%,rgba(255,255,255,0)_100%)]"
-        }`}
-      >
+            : "bg-[linear-gradient(180deg,#FFFFFF_0%,rgba(255,255,255,0)_100%)]"}`}>
         {/* Logo */}
         <a href="">
           <img
