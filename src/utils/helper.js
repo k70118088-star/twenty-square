@@ -1,19 +1,21 @@
+import { CONTACT, GIFT, HOME, OFFERS } from "./constant";
+
 export const navLInks = [
     {
       title: "Home",
-      url: "/",
+      url: HOME,
     },
     {
       title: "Offers",
-      url: "/offers",
+      url: OFFERS,
     },
     {
       title: "Gift Card",
-      url: "/gift-card",
+      url: GIFT,
     },
     {
         title: "Contact Us",
-        url: "/contact-us"
+        url: CONTACT,
     }
   ];
 

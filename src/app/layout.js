@@ -9,11 +9,6 @@ const interTight =Inter_Tight({
   subsets: ["latin"],
 });
 
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
-
 export const metadata = {
   title: "Twenty Square",
   description: "A wonderful way to Transform your walls.",
