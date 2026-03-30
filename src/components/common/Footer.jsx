@@ -12,29 +12,29 @@ const Footer = () => {
                 <div className='flex flex-col sm:flex-row justify-center gap-10 sm:gap-20 lg:gap-43.75 pt-9.5'>
                     
                     <div className='flex justify-center lg:justify-start'>
-                        <img src="/assets/footer-img.png" alt="" className='w-28 sm:w-35.5 h-[60px]' />
+                        <img src="/assets/footer-img.png" alt="" className='w-28 sm:w-35.5 h-15' />
                     </div>
 
                     <div className='flex'>
                         
                         <div className='w-33.75 flex flex-col '>
                             <h3 className='font-medium text-base leading-[150%] text-black'>About</h3>
-                            <a href="" className='pt-5 font-normal text-sm leading-[150%] text-[#4A4F4B]'>About Us</a>
-                            <a href="" className='pt-3 font-normal text-sm leading-[150%] text-[#4A4F4B]'>FAQ’s</a>
-                            <a href="" className='pt-3 font-normal text-sm leading-[150%] text-[#4A4F4B]'>Policies</a>
+                            <a href="" className='pt-5 hover:text-black font-normal text-sm leading-[150%] text-[#4A4F4B]'>About Us</a>
+                            <a href="" className='pt-3 hover:text-black font-normal text-sm leading-[150%] text-[#4A4F4B]'>FAQ’s</a>
+                            <a href="" className='pt-3 hover:text-black font-normal text-sm leading-[150%] text-[#4A4F4B]'>Policies</a>
                         </div>
 
                         <div className='w-33.75 flex flex-col'>
                             <h3 className='font-medium text-base leading-[150%] text-black'>Products</h3>
-                            <a href="" className='pt-5 font-normal text-sm leading-[150%] text-[#4A4F4B]'>Squares</a>
-                            <a href="" className='pt-3 font-normal text-sm leading-[150%] text-[#4A4F4B]'>Gift Cards</a>
-                            <a href="" className='pt-3 font-normal text-sm leading-[150%] text-[#4A4F4B]'>Offers</a>
+                            <a href="" className='pt-5 hover:text-black font-normal text-sm leading-[150%] text-[#4A4F4B]'>Squares</a>
+                            <a href="" className='pt-3 hover:text-black font-normal text-sm leading-[150%] text-[#4A4F4B]'>Gift Cards</a>
+                            <a href="" className='pt-3 hover:text-black font-normal text-sm leading-[150%] text-[#4A4F4B]'>Offers</a>
                         </div>
 
                     </div>
                 </div>
 
-                <div className='w-full max-w-[320px] h-auto sm:h-[152px] mt-6 lg:mt-[14.45px] mx-auto lg:mx-0 -rotate-3 rounded-2xl flex flex-col bg-white shadow-[-33px_37px_43.8px_-17px_#0000001A] px-3 sm:px-6.25 py-4 sm:py-0'>
+                <div className='w-full max-w-[320px] h-auto sm:h-38 mt-6 lg:mt-[14.45px] mx-auto lg:mx-0 -rotate-3 rounded-2xl flex flex-col bg-white shadow-[-33px_37px_43.8px_-17px_#0000001A] px-3 sm:px-6.25 py-4 sm:py-0'>
                     <img src="/assets/message.png" alt="" className='w-10 sm:w-12.25 h-10 sm:h-12.5' />
                     
                     <h4 className='font-semibold text-xl sm:text-2xl pt-[4.66px] leading-[100%] bg-gradient-to-r from-black to-[#494949] bg-clip-text text-transparent'>
