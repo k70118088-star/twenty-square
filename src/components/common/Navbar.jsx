@@ -48,14 +48,14 @@ const Navbar = () => {
           </div>
           <div className="flex items-center gap-2.5">
             <Button
-              className="flex items-center gap-2.5 py-2.75 px-6 border border-[#EDEDED] font-semibold text-base text-black rounded-[82px]"
+              className="flex items-center hover:text-white hover:border-transparent hover:shadow-[0px_12px_43.8px_-10px_#ED1C25] hover:transition-all duration-700 ease-in-out hover:bg-[#ED1C25] gap-2.5 py-2.75 px-6 border border-[#EDEDED] font-semibold text-base text-black rounded-[82px]"
               text="Download App"
               icon="download"/>
             <Button
               className="flex items-center border border-[#EDEDED] p-[13px] rounded-[82px]"
               icon="cart"/>
             <Button
-              className="flex items-center gap-2.5 py-[11.5] px-6 bg-[#ED1C25] font-semibold text-base text-white rounded-[82px]"
+              className="flex items-center gap-2.5 py-[11.5] px-6 hover:bg-transparent hover:text-black hover:transition-all duration-700 ease-in-out hover:shadow-[0px_12px_43.8px_-10px_#ED1C25] bg-[#ED1C25] font-semibold text-base text-white rounded-[82px]"
               text="Sign Up/Log In"/>
           </div>
         </div>

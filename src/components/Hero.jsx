@@ -15,7 +15,7 @@ const Hero = () => {
           walls and bring out your true personality.
         </p>
         <Button
-          className="mt-5 sm:mt-6.25 flex items-center py-2 sm:py-3 px-5 sm:px-[24.5px] font-semibold text-sm sm:text-lg lg:text-xl text-white rounded-[82px] bg-[#ED1C25] shadow-[0px_12px_43.8px_-10px_#ED1C25]"
+          className="mt-5 sm:mt-6.25 hover:bg-transparent hover:text-black hover:transition-all duration-700 ease-in-out  flex items-center py-2 sm:py-3 px-5 sm:px-[24.5px] font-semibold text-sm sm:text-lg lg:text-xl text-white rounded-[82px] bg-[#ED1C25] shadow-[0px_12px_43.8px_-10px_#ED1C25]"
           text="Square Your Photos"
         />
         <p className="mt-12 sm:mt-20 lg:mt-22.25 font-normal text-[12px] leading-[100%] text-[#1E1E1E]">
