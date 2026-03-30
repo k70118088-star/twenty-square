@@ -7,6 +7,7 @@ import Button from "./Button";
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 1);
@@ -14,6 +15,7 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
   return (
     <div className="w-full mx-auto fixed top-0 z-20">
       {/* Navbar */}
@@ -39,36 +41,39 @@ const Navbar = () => {
               <Link
                 key={index}
                 href={item.url}
-                className="font-normal text-base text-black"
-              >
+                className="font-normal text-base text-black">
                 {item.title}
               </Link>
             ))}
           </div>
           <div className="flex items-center gap-2.5">
             <Button
-              className="flex items-center gap-2.5 py-3.5 px-6 border border-[#EDEDED] font-semibold text-base text-black rounded-[82px]"
+              className="flex items-center gap-2.5 py-2.75 px-6 border border-[#EDEDED] font-semibold text-base text-black rounded-[82px]"
               text="Download App"
-              icon="download"
-            />
+              icon="download"/>
             <Button
-              className="flex items-center border border-[#EDEDED] p-[13.5px] rounded-[82px]"
-              icon="cart"
-            />
+              className="flex items-center border border-[#EDEDED] p-[13px] rounded-[82px]"
+              icon="cart"/>
             <Button
-              className="flex items-center gap-2.5 py-3 px-6 bg-[#ED1C25] font-semibold text-base text-white rounded-[82px]"
-              text="Sign Up/Log In"
-            />
+              className="flex items-center gap-2.5 py-[11.5] px-6 bg-[#ED1C25] font-semibold text-base text-white rounded-[82px]"
+              text="Sign Up/Log In"/>
           </div>
         </div>
-        {/* Hamburger */}
-        <button
-          className="lg:hidden flex flex-col gap-1"
-          onClick={() => setMenuOpen(true)}>
-          <span className="w-6 h-[2px] bg-black"></span>
-          <span className="w-6 h-[2px] bg-black"></span>
-          <span className="w-6 h-[2px] bg-black"></span>
-        </button>
+        {/* ✅ Mobile Right Side (Cart + Hamburger) */}
+        <div className="lg:hidden flex items-center gap-3">
+          {/* Cart Button */}
+          <Button
+            className="flex items-center border border-[#EDEDED] p-[10px] rounded-[82px]"
+            icon="cart"/>
+          {/* Hamburger */}
+          <button
+            className="flex flex-col gap-1"
+            onClick={() => setMenuOpen(true)}>
+            <span className="w-6 h-[2px] bg-black"></span>
+            <span className="w-6 h-[2px] bg-black"></span>
+            <span className="w-6 h-[2px] bg-black"></span>
+          </button>
+        </div>
       </div>
       {/* Overlay */}
       <div
@@ -80,15 +85,12 @@ const Navbar = () => {
       {/* Right Drawer */}
       <div
         className={`fixed top-0 right-0 h-full w-[280px] bg-white z-30 shadow-lg transform transition-transform duration-300 ease-in-out ${
-          menuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-      >
+          menuOpen ? "translate-x-0" : "translate-x-full"}`}>
         <div className="p-6 flex items-center flex-col gap-5">
           {/* Close Button */}
           <button
             className="self-end text-2xl"
-            onClick={() => setMenuOpen(false)}
-          >
+            onClick={() => setMenuOpen(false)}>
             ✕
           </button>
           {/* Nav Links */}
@@ -97,8 +99,7 @@ const Navbar = () => {
               key={index}
               href={item.url}
               className="text-black text-base"
-              onClick={() => setMenuOpen(false)}
-            >
+              onClick={() => setMenuOpen(false)}>
               {item.title}
             </Link>
           ))}
@@ -106,16 +107,13 @@ const Navbar = () => {
           <Button
             className="flex items-center justify-center gap-2.5 py-3 px-6 border border-[#EDEDED] text-black rounded-[82px]"
             text="Download App"
-            icon="download"
-          />
+            icon="download"/>
           <Button
             className="flex items-center justify-center border border-[#EDEDED] p-3 rounded-[82px]"
-            icon="cart"
-          />
+            icon="cart"/>
           <Button
             className="flex items-center justify-center gap-2.5 py-3 px-6 bg-[#ED1C25] text-white rounded-[82px]"
-            text="Sign Up/Log In"
-          />
+            text="Sign Up/Log In"/>
         </div>
       </div>
     </div>
