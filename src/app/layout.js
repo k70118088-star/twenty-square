@@ -17,6 +17,11 @@ const interTight =Inter_Tight({
 export const metadata = {
   title: "Twenty Square",
   description: "A wonderful way to Transform your walls.",
+  openGraph: {
+    title: "Twenty Square",
+    description: "A wonderful way to Transform your walls.",
+    images: ["/Home.png"],
+  },
 };
 
 export default function RootLayout({ children }) {
