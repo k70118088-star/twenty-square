@@ -17,13 +17,13 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="w-full mx-auto fixed top-0 z-20">
-      {/* Navbar */}
-      <div
-        className={`max-w-360 w-full mx-auto px-4 sm:px-6 pt-3 pb-3.25 flex items-center justify-between transition-all duration-300 ${
+    <div className={`w-full  mx-auto fixed top-0 z-20 ${
           scrolled
             ? "bg-white shadow-md"
             : "bg-[linear-gradient(180deg,#FFFFFF_0%,rgba(255,255,255,0)_100%)]"}`}>
+      {/* Navbar */}
+      <div
+        className={`max-w-360 w-full mx-auto px-4 sm:px-6 pt-3 pb-3.25 flex items-center justify-between transition-all duration-300 `}>
         {/* Logo */}
         <a href="">
           <img
